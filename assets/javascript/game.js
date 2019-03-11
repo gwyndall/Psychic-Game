@@ -60,7 +60,8 @@ function guessGame() {
             else {
                 alert("You win! Let's play again.");
                 wins++;
-                document.getElementById('wins').textContent = wins;
+                document.getElementById('wins').textContent = wins
+                document.getElementById('guesses').innerHTML = ''
                 newGame();
             }
         }
