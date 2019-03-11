@@ -18,7 +18,7 @@ function newGame() {
     
     //Computer selects a random letter
     compLetter = letters[Math.floor(Math.random() * letters.length)];
-    guessGame();
+//    guessGame();
     console.log(compLetter);
     return compLetter;
 }
