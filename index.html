@@ -11,15 +11,23 @@
  
 </head>
 
-<body onload="randLetter()">
-    <H1>The Psychic Game</H1>
-    <p>Guess what letter I'm thinking of! <br> Press a letter key to guess.</p>
-    <p>Wins: <span id="wins"></span></p>
-    <p>Losses:  <span id="losses"></span></p>
-    <p>Guesses Left:  <span id="guessesLeft"></span></p>
-    <p>Your Guesses So Far:  <span id="guesses"></span></p>
+<body onload="newGame()">
+    <div id="mainContent">
 
-    <script src="assets/javascript/game.js"></script>
+        <H1>The Psychic Game</H1>
+        <div>
+            Guess what letter I'm thinking of! <br> Press a letter key to guess.</p>
+        </div> 
+        <div id="scoreBox">
+
+            <div id="winScore">Wins: &nbsp; <span id="wins"></span></div>
+            <div id="lossScore">Losses: &nbsp; <span id="losses"></span></div>
+        </div>
+            <div id="guessStatus">Guesses Left:  <span id="guessesLeft"></span></div><br>
+            <div id="lettersGuessed">Your Guesses So Far:  <span id="guesses"></span></div>
+        
+        <script src="assets/javascript/game.js"></script>
+    </div>
 
 </body>
 
