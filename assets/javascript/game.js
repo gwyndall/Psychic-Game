@@ -17,7 +17,7 @@ function newGame() {
     document.getElementById('losses').textContent = losses;
     
     //Computer selects a random letter
-    var compLetter = letters[Math.floor(Math.random() * letters.length)];
+    compLetter = letters[Math.floor(Math.random() * letters.length)];
     guessGame();
     console.log(compLetter);
     return compLetter;
