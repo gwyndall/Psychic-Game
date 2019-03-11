@@ -10,7 +10,7 @@
  
 </head>
 
-<body onload="newGame()">
+<body>
     <div id="mainContent">
 
         <H1>The Psychic Game</H1>
@@ -25,7 +25,10 @@
             <div id="guessStatus">Guesses Left:  <span id="guessesLeft"></span></div><br>
             <div id="lettersGuessed">Your Guesses So Far:  <span id="guesses"></span></div>
         
-        <script src="assets/javascript/game.js"></script>
+        <script src="assets/javascript/game.js">
+     newGame();
+    </script>
+
     </div>
 
 </body>
