@@ -11,7 +11,7 @@ var compLetter;
 function newGame() {
     
     lettersGuessed = [];
-    numGuesses = 3;
+    numGuesses = 8;
     document.getElementById('guessesLeft').textContent = numGuesses;
     document.getElementById('wins').textContent = wins;
     document.getElementById('losses').textContent = losses;
