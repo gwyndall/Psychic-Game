@@ -44,6 +44,7 @@ function newGame() {
     //Computer selects a random letter
     var compLetter = letters[Math.floor(Math.random() * letters.length)];
     guessGame(compLetter);
+  
     console.log(compLetter);
     return compLetter;
 }
@@ -83,9 +84,11 @@ function guessGame(compLetter) {
             else {
                 alert("You win! Let's play again.");
                 wins++;
+
                 document.getElementById("wins").textContent = wins;
                 newGame();
             }
         }
     };
 }
+
