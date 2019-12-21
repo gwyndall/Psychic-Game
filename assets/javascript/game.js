@@ -36,15 +36,15 @@ var compLetter;
 
 function newGame() {
     lettersGuessed = [];
-    numGuesses = 5;
+    numGuesses = 3;
     document.getElementById("guessesLeft").textContent = numGuesses;
     document.getElementById("wins").textContent = wins;
     document.getElementById("losses").textContent = losses;
 
     //Computer selects a random letter
-    var compLetter = letters[Math.floor(Math.random() * letters.length)];
+    compLetter = letters[Math.floor(Math.random() * letters.length)];
     guessGame(compLetter);
-  
+
     console.log(compLetter);
     return compLetter;
 }
@@ -52,6 +52,7 @@ function newGame() {
 function guessGame(compLetter) {
     document.onkeyup = function (x) {
         var x = event.key;
+        compLetter = compLetter;
         //On key event, compare key pressed var letters to validate a letter was selected
         //if not a letter,
         if (!letters.includes(x)) {
@@ -91,4 +92,3 @@ function guessGame(compLetter) {
         }
     };
 }
-
